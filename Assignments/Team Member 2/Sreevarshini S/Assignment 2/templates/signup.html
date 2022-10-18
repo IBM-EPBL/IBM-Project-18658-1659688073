@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h2{
+        text-align:center;
+        color:red;
+        }
+        .form {
+        position: absolute;
+        max-width: 500px;
+        margin: auto;
+        padding: 10px 30px;
+        background-color: pink;
+        top: 30px;
+        left: 550px;
+        }
+        .input {
+        display:flex;	
+        margin-bottom: 15px;
+        }
+        .icon {
+        padding: 10px;
+        background: blue;
+        color: white;
+        max-width: 50px;
+        }
+        .input-field {
+        width: 100%;
+        padding: 10px;
+        }
+        .input-field:focus {
+        border: 3px solid blue;
+        }
+        .button {
+        background-color: blue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.7;
+        }
+        .button:hover {
+        opacity: 1;
+        }
+          
+    </style>
+  </head>
+ <body bgcolor="lightblue">
+    <form action="about.html" method="POST" class="form">
+    <h2>SIGNUP</h2>
+    <div class="input">
+    <i class="fa fa-user icon"></i>    
+    <input class="input-field" type="text" placeholder="Name" name="usrnm" id="name">
+    </div>
+    <div class="input">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="gmail" placeholder="Email" name="email" id="mail">
+    </div>
+    <div class="input">
+    <i class="fa fa-address-card icon"></i>    
+    <input class="input-field" type="number" placeholder="Register number" name="regnum" id="regno">
+    </div>
+    <div class="input">
+    <i class="fa fa-male icon"></i>
+    <i class="fa fa-female icon"></i>
+    <input class="input-field" type="button" value="Select your gender" name="genders" id="gender">
+    <i class="fa fa-male icon"></i>
+    <input type="radio" id="male" name="Gender" value="male">
+    <label for="male"><b>Male</b></label>&nbsp;
+    <i class="fa fa-female icon"></i>
+    <input type="radio" id="female" name="Gender" value="female">
+    <label for="female"><b>Female</b></label>
+    </div>
+    <div class="input">
+    <i class="fa fa-calendar icon"></i>
+    <input class="input-field" type="button" value="Select your date of birth">
+    <input class="input-field" type="date" name="birthdate" id="dob">
+    </div>
+    
+    <div class="input">
+    <i class="fa fa-list-ol icon"></i>
+    <input class="input-field" type="number" name="luckynum" id="lnumber" placeholder="Lucky Number">
+    </div>
+    
+    <div class="input">
+    <i class="fa fa-paint-brush icon"></i>
+    <input class="input-field" type="text" name="luckycol" id="lcolour" placeholder="Lucky Colour">
+    </div>
+    
+    <div class="input">
+    <i class="fa fa-instagram icon"></i>
+    <input class="input-field" type="text" name="instagram" id="insta" placeholder="Instagram Id">
+    </div>
+    
+    
+    <div class="input">
+    <i class="fa fa-snapchat icon"></i>
+    <input class="input-field" type="text" name="snapchat" id="snap" placeholder="Snapchat Id">
+    </div>
+    
+    <div class="input">
+    <i class="fa fa-location-arrow icon"></i>
+    <input class="input-field" type="text" name="address" id="addrs" placeholder="Address">
+    </div>
+    
+    <div class="input">
+    <i class="fa fa-phone icon"></i>    
+    <input class="input-field" type="number" placeholder="Phone number" name="phnum" id="phno">
+    </div>
+    <div class="input">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="pass" id="pwd">
+    </div>
+    <div class="input">
+    <i class="fa fa-check icon"></i>
+    <input class="input-field" type="password" placeholder="Confirm Password" name="cpass" id="cpwd">
+    </div>
+    <br>
+    <div class="input">
+    <input type="checkbox" name="Terms and Conditions" required>The above given information is true to my knowledge, if it came to know that the provided information is wrong, varshini will get scolding from me
+    </div>
+    <div class="input">
+    <input type="checkbox" name="Terms and Conditions" required>By clicking this, you are accepting our &nbsp;<a href="TC.html">Terms & Conditions</a>
+    </div>
+    <button type="submit"class="button" name="submit">REGISTER</button>
+    </form>
+ </body>
+</html>

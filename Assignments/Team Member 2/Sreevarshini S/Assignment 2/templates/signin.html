@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h2{
+        text-align:center;
+        color:red;
+        position: relative;
+        bottom: 20px;
+        }
+        .form {
+        position: absolute;
+        max-width: 500px;
+        margin: auto;
+        padding: 30px 30px;
+        background-color:pink;
+        top: 150px;
+        left: 587px;
+        }
+        .input {
+        display:flex;	
+        margin-bottom: 15px;
+        }
+        .icon {
+        padding: 10px;
+        background: blue;
+        color: white;
+        max-width: 50px;
+        }
+        .input-field {
+        width: 100%;
+        padding: 10px;
+        }
+        .input-field:focus {
+        border: 3px solid blue;
+        }
+        .button {
+        background-color: blue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.7;
+        margin-bottom: 20px;
+        }
+        .button:hover {
+        opacity: 1;
+        }
+        body {
+        background-image: url('/static/images/j.jpg'), url('/static/images/j.jpg');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 550px, 550px;
+        background-position: 200px 50px, 800px 50px;
+        }
+    </style>
+  </head>
+ <body bgcolor="lightblue">
+    <form action="about.html" method="POST" class="form">
+    <h2>SIGN IN</h2>
+    <div class="input">
+    <i class="fa fa-address-card icon"></i>    
+    <input class="input-field" type="number" placeholder="Register number" name="regnum" id="regno">
+    </div>
+    <div class="input">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="pass" id="pwd">
+    </div>
+    <button type="submit"class="button">SIGN IN</button>
+    <a href="PasswordRecovery.php">Forget Password?</a>
+    <a href="signup.html">New User?</a>
+    </form>
+ </body>
+</html>
