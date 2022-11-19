@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customercareregistry
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: customercareregistry
+  template:
+    metadata:
+      labels:
+        app: customercareregistry
+
+    spec:
+      containers:
+        - name: customercareregistry-container
+          image: uk.icr.io/ibm_project/customercareregistry
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
